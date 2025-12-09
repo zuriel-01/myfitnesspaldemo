@@ -1,0 +1,92 @@
+'use client';
+import Image from 'next/image';
+import React, { useState, useEffect } from 'react';
+
+const Section4 = () => {
+
+  const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
+  
+    const testimonials = [
+  { text: "MyFitnessPal helped me gain muscle, get a 6-pack and simply achieve all my body goals."
+  , author: "Synthia J." },
+  
+  { text: "This is the best I've felt physically, mentally, and emotionally in all of my 37 years. I'm eating well, exercising and able to play with my kids"
+  , author: "Alisha S." },
+  
+  { text: "The biggest realization is that I can do better. It is actually possible to eat healthy and the food can taste good. MyFitnessPal helped me overhaul my habits. ",
+  author: "Quincy D." },
+  
+  { text: "I was 307 lbs,and today I am 199 lbs. I participated in a diabetes prevention program, learning how proper nutrition and exercise are essential. That is when i began using MyFitnessPal. I still use it everyday"
+  , author: "Larry S." }, 
+  
+  { text: "Once I started focusing on improving my body with nutrition for the purpose of building strength, my body has changed. More importantly, I'm feeling confident and empowered with who i am. "
+  , author: "Brooke N." }
+      
+    ];
+  
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setCurrentTestimonialIndex((prev) => (prev + 1) % testimonials.length);
+      }, 6000);
+  
+      return () => clearInterval(interval);
+    }, []);
+  return (
+    <div>
+      <div className="section4 flex flex-col">
+        <h1 className="flex justify-center  text-slate-600 font-semibold mt-22">Get Results</h1>
+        <div className="flex justify-center text-3xl md:text-5xl font-bold pt-2">
+            <h1 className=''>
+                Nutrition tracking works,
+            <p className='flex justify-center '> 
+                 here&apos;s the proof
+            </p>
+            </h1>                       
+        </div>
+
+        <div className="md:grid md:grid-cols-3 flex flex-col items-center justify-center md:px-24 md:flex-row p-4 md:gap-8">
+          <div className='relative w-72 h-72 md:w-96 md:h-96 pt-12"' >
+            <Image
+            src={"/success-users-left-desktop.webp"}          
+            className='object-cover'
+            alt="users left"
+            fill
+            
+            /> 
+          </div>
+          <div>
+               <div className=" flex items-center justify-center ">
+          <div className="text-black text-center pt-8 transition-opacity duration-500">
+            <p>{testimonials[currentTestimonialIndex].text}</p>
+            <p className="mt-6 text-sm">{testimonials[currentTestimonialIndex].author}</p>
+          </div>
+        </div>
+        <div className="flex gap-2 md:mt-12 md:mb-12 justify-center">
+          {testimonials.map((_, index) => (
+            <div
+              key={index}
+              className={`w-1.5 h-1.5 rounded-full transition-all mt-6
+                ${
+                index === currentTestimonialIndex ? 'bg-blue-600' : 'bg-[#6c6c70]'
+              }`}
+            />
+          ))}
+        </div>
+          </div>
+          <div>
+            <Image
+            src={"/success-users-right.webp"}
+            width={400}
+            height={500}
+            alt="users-right"
+            className='hidden md:block'
+            />
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Section4
