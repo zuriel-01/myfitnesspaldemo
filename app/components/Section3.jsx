@@ -9,11 +9,11 @@ const Section3 = () => {
           <IoMdListBox className='text-4xl text-white'/>
         </div>
          
-        <p className=' pt-12 text-white text-5xl  text-center md:text-6xl font-bold'>
+        <p className=' pt-12 text-white text-5xl  text-center md:text-5xl lg:text-6xl font-bold md:w-96 mx-auto'>
             If it&apos;s edible, it&apos;s in here
         </p>
       
-        <p className=" pt-7 text-center text-white text-2xl md:text-3xl pb-20">
+        <p className=" pt-7 text-center text-white text-2xl md:text-xl lg:text-3xl pb-20">
           Track over 20 million <br/> global foods
         </p>
       </div>

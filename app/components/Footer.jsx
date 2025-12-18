@@ -6,8 +6,8 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <div className='bg-[#151824] h[520px] md:h-[420px] w-full'>
-      <div className='grid grid-cols-2 mt-8 md:px-40'>
+    <div className='bg-[#151824] w-full'>
+      <div className='grid grid-cols-2 mt-8 '>
         <div className='mx-8 flex flex-col'>
           <h1 className='text-white font-bold text-xl md:text-[28px] md:mt-12 mt-8 '>myfitnesspal</h1>
 
@@ -43,14 +43,14 @@ const Footer = () => {
             <h1>Premium</h1>
           </div>
 
-          <div className='space-y-2 mt-10'>
+          <div className='space-y-2 mt-10 md:mt-0'>
             <h1 className='font-bold text-[18px] md:text-[16px]'>Resources</h1>
             <div className='space-y-2 text-gray-200 text-sm'>
               <h1>Blog</h1>
               <h1>Community</h1>
               <h1>Contact Us</h1>
               <h1>Support Center</h1>
-            </div>                        
+            </div>                       
           </div>
           
           <div className='hidden md:block space-y-2'>
@@ -64,7 +64,7 @@ const Footer = () => {
       </div>
 
       <div className='flex justify-self-center flex-col items-center mt-6'>        
-          <h1 className='text-white mt-14'>Nutrition tracking for real life.</h1>
+          <h1 className='text-white mt-14 md:mt-7'>Nutrition tracking for real life.</h1>
           <span>
             <button className="flex justify-center bg-white text-[#0066EE] rounded-4xl px-10 py-2 text-[15px] font-semibold mt-4">
               START TODAY
@@ -74,7 +74,7 @@ const Footer = () => {
       </div>
 
 
-      <div className='text-neutral-400 text-center w-80 space-x-2 mx-auto mt-10 md:mt-28 text-[13px]'>
+      <div className='text-neutral-400 text-center w-80 space-x-2 mx-auto mt-10 text-[13px]'>
         <Link 
         className=' '
         href="@/app/dummy-page" 

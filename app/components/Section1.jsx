@@ -54,7 +54,7 @@ const Section1 = () => {
         
         <div className="h-20 flex items-center justify-center">
           <div className="text-lg text-white pt-4 px-5 transition-opacity duration-500">
-            <p>{testimonials[currentTestimonialIndex].text}</p>
+            <p className='w-72      mt-12 '>{testimonials[currentTestimonialIndex].text}</p>
             <p className="mt-2 text-sm">{testimonials[currentTestimonialIndex].author}</p>
           </div>
         </div>
@@ -62,7 +62,7 @@ const Section1 = () => {
           {testimonials.map((_, index) => (
             <div
               key={index}
-              className={`w-1.5 h-1.5 rounded-full transition-all ${
+              className={`w-1.5 h-1.5 rounded-full mt-3 transition-all ${
                 index === currentTestimonialIndex ? 'bg-white' : 'bg-[#6c6c70]'
               }`}
             />

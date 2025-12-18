@@ -19,7 +19,7 @@ const Section2 = () => {
             <p className="text-[28px] font-bold text-center">
               Track calories, macros, and more
             </p>
-            <p className="mt-4 mb-4 text-gray-500 text-center">
+            <p className="mt-4 mb-4 text-gray-500 text-center w-80">
               Log even faster with tools like barcode scan & the NEW voice log.
             </p>
           
@@ -58,7 +58,7 @@ const Section2 = () => {
             <p className="text-[28px] font-bold text-center">
              Eat better and hit your goals
             </p>
-            <p className="mt-4 mb-4 text-gray-500 text-center">
+            <p className="mt-4 mb-4 text-gray-500 w-80 text-center">
               Learn which foods help you feel your best, and get tailored weekly meal plans!
             </p>
           <Image
@@ -71,7 +71,7 @@ const Section2 = () => {
            
         </div>
       </div>      
-        <div className=' my-20 flex flex-col bg-[#151824] rounded-2xl p-6 mx-4 '>
+        <div className=' my-20 flex flex-col bg-[#151824] rounded-2xl p-6 mx-20 md:w-[70%] justify-self-center'>
           <div >
           <p className="text-gray-500 text-center font-semibold ">35+ apps & devices</p>
           <p className="text-white text-2xl font-semibold text-center ">
@@ -79,14 +79,12 @@ const Section2 = () => {
           </p>
           </div>
       
-        <div>
-          <Image
+          <div  className='relative w-72 h-72 md:w-[450px] md:h-[450px] mb-5 flex mt-12 mx-auto'>
+            <Image
             src={"/image7.png"}
-            width={400}
-            height={400}
-            alt="apps to sync myfitness app with"
-            className='flex pt-8 '
-          />
+            fill
+            alt="apps to sync myfitness app with"           
+            />
         </div>
       </div>
       

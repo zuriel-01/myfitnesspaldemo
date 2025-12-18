@@ -35,7 +35,7 @@ const Section4 = () => {
     <div>
       <div className="section4 flex flex-col">
         <h1 className="flex justify-center  text-slate-600 font-semibold mt-22">Get Results</h1>
-        <div className="flex justify-center text-3xl md:text-5xl font-bold pt-2">
+        <div className="flex justify-center text-2xl lg:text-5xl font-bold pt-2">
             <h1 className=''>
                 Nutrition tracking works,
             <p className='flex justify-center '> 
@@ -44,8 +44,8 @@ const Section4 = () => {
             </h1>                       
         </div>
 
-        <div className="md:grid md:grid-cols-3 flex flex-col items-center justify-center md:px-24 md:flex-row p-4 md:gap-8">
-          <div className='relative w-72 h-72 md:w-96 md:h-96 pt-12"' >
+        <div className="lg:grid lg:grid-cols-3 flex flex-col items-center lg:px-24 lg:flex-row lg:gap-8">
+          <div className='relative w-72 h-72 md:w-[500px] md:h-[500px] mt-12' >
             <Image
             src={"/success-users-left-desktop.webp"}          
             className='object-cover'
@@ -56,7 +56,7 @@ const Section4 = () => {
           </div>
           <div>
                <div className=" flex items-center justify-center ">
-          <div className="text-black text-center pt-8 transition-opacity duration-500">
+          <div className="text-black text-center pt-8 w-80 transition-opacity text-[15px] duration-500 md:w-96">
             <p>{testimonials[currentTestimonialIndex].text}</p>
             <p className="mt-6 text-sm">{testimonials[currentTestimonialIndex].author}</p>
           </div>
@@ -79,7 +79,7 @@ const Section4 = () => {
             width={400}
             height={500}
             alt="users-right"
-            className='hidden md:block'
+            className='hidden lg:block'
             />
           </div>
         

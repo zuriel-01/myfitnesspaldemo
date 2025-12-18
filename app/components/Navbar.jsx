@@ -25,14 +25,14 @@ const Navbar = () => {
       {/* Combined Navbar Container - No Demarcation */}
       <div className="flex flex-col">
         {/* Top Part - Solid White */}
-        <div className="hidden md:block h-14 bg-white">
+        <div className="hidden lg:block h-14 bg-white">
             <p className="text-[#0066EE] text-2xl font-semibold flex items-center ml-58">myfitnesspal</p>
         </div>
         
         {/* Bottom Part - Almost Transparent White */}
         <div className="h-14 bg-white/55 backdrop-blur-md">
-          <div className="flex items-center space-x-2 h-full md:pl-34 text-[10px] md:text-sm">
-            <button className="text-[#0066EE] border border-[#0066EE] text-[10px] md:text-sm text-bold bg-white hover:bg-blue-900 hover:text-white px-2 py-1 rounded-4xl transition-colors hover:cursor-pointer">
+          <div className="flex items-center space-x-2 pl-4 h-full lg:pl-34 text-[10px] md:text-sm">
+            <button className="text-[#0066EE] border border-[#0066EE] text-[10px] md:text-sm ml-3 text-bold bg-white hover:bg-blue-900 hover:text-white px-2 py-1 rounded-4xl transition-colors hover:cursor-pointer">
               Reviews
             </button>
             <button className="text-[#0066EE] border border-[#0066EE] text-[10px] md:text-sm text-bold bg-white hover:bg-blue-900 hover:text-white px-2 py-1 rounded-4xl transition-colors hover:cursor-pointer">

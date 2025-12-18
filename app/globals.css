@@ -9,15 +9,13 @@ body{
   font-family: Helvetica;
 }
 
-.section5{
+/* .section5{
     background-image: linear-gradient(200deg, #0066EE 60%, #9383FB 100%);
-    margin-top: 70px ;
-    height: 500px;
-    width: 100%;
+       
     color: white;
     align-items: center;    
     justify-content: center;
-}
+} */
 
 .question{
   display: flex;

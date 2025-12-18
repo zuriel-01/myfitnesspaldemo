@@ -6,14 +6,14 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 const Herosection = () => {
   return (
     <div>
-        <div className="hero bg-[linear-gradient(200deg,#0066EE_60%,#9383FB_100%)] h-[1160px] w-full text-center">
+        <div className="hero bg-[linear-gradient(200deg,#0066EE_60%,#9383FB_100%)] h-[1160px] lg:h-[670px] w-full text-center">
         <div className=" flex pt-2 px-5">
           <p className="text-white text-2xl font-semibold ">myfitnesspal</p>
           <p className=" ml-auto">
             <IoPersonCircleSharp className="text-white text-3xl" />
           </p>
         </div>
-        <div className=" flex items-center flex-col">
+        <div className=" flex items-center flex-col lg:flex-row">
           <div className=" items-center px-18">
             <h1 className="text-neutral-300 text-sm pt-24 font-semibold">
               #1 nutrition tracking app
@@ -32,7 +32,7 @@ const Herosection = () => {
               </div>
              
             
-            <p className="text-white  pt-8">
+            <p className="text-white  pt-8 md:w-72 flex justify-self-center">
               Make progress with the all-in-one food, exercise, and calorie tracker.
             </p>
             <button className=" mt-8 flex justify-center bg-white text-[#0066EE] rounded-4xl px-10 mx-auto py-2 text-[15px] font-semibold">

@@ -5,7 +5,7 @@ const Accordion = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="rounded-xl h-28 overflow-hidden mb-4 shadow-md md:w-[700px]">
+    <div className="rounded-xl h-28 overflow-hidden mb-4 justify-self-center shadow-md md:w-[700px]">
       {/* Question Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
