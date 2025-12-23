@@ -27,7 +27,7 @@ const Section6 = () => {
           className='rounded-xl'
         />
         </div>
-        <div className='absolute bottom-0 text-white text-[10px] h-10 w-full bg-blue-600 rounded-b-xl pl-2 '>
+        <div className='absolute bottom-0 lg:bottom-9 text-white text-[10px] h-10  w-full bg-blue-600 rounded-b-xl pl-2 '>
           <h1 className='font-semibold'>
             Stephanie Saletta
           </h1>
@@ -68,7 +68,7 @@ const Section6 = () => {
             <h1 className='text-bold text-3xl md:text-5xl'>
                 As seen in...
             </h1>
-            <div className='hidden lg:flex lg:items-center lg:justify-center mt-14 relative'>
+            <div className='hidden lg:block lg:flex lg:h-56 lg:w-[50%] lg:items-center  lg:justify-self-center mt-14 relative'>
             <Image
               src= {"/image3.png"}
               alt="my image"

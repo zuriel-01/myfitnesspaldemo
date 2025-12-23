@@ -44,19 +44,19 @@ const Section4 = () => {
             </h1>                       
         </div>
 
-        <div className="lg:grid lg:grid-cols-3 flex flex-col items-center lg:px-24 lg:flex-row lg:gap-8">
-          <div className='relative w-72 h-72 md:w-[500px] md:h-[500px] mt-12' >
+        <div className="lg:grid lg:grid-cols-3 flex flex-col items-center lg:px-10 lg:flex-row ">
+          <div className='relative w-72 h-72 md:w-[500px] md:h-[500px] mt-12 lg:mt-7 lg:h-96 lg:w-80 object-cover' >
             <Image
-            src={"/success-users-left-desktop.webp"}          
-            className='object-cover'
+            src={"/success-users-left-desktop.webp"}      
+            
             alt="users left"
             fill
             
             /> 
           </div>
           <div>
-               <div className=" flex items-center justify-center ">
-          <div className="text-black text-center pt-8 w-80 transition-opacity text-[15px] duration-500 md:w-96">
+            <div className=" flex items-center justify-center ">
+          <div className="text-black text-center pt-8 w-80 lg:px-7 transition-opacity text-[15px] duration-500 md:w-96">
             <p>{testimonials[currentTestimonialIndex].text}</p>
             <p className="mt-6 text-sm">{testimonials[currentTestimonialIndex].author}</p>
           </div>
@@ -73,11 +73,10 @@ const Section4 = () => {
           ))}
         </div>
           </div>
-          <div>
+          <div className='relative lg:w-80 lg:mt-7 lg:h-96'>
             <Image
             src={"/success-users-right.webp"}
-            width={400}
-            height={500}
+            fill 
             alt="users-right"
             className='hidden lg:block'
             />

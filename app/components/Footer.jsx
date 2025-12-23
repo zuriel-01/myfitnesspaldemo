@@ -8,8 +8,18 @@ const Footer = () => {
   return (
     <div className='bg-[#151824] w-full'>
       <div className='grid grid-cols-2 mt-8 '>
-        <div className='mx-8 flex flex-col'>
-          <h1 className='text-white font-bold text-xl md:text-[28px] md:mt-12 mt-8 '>myfitnesspal</h1>
+        <div className='mx-8 lg:mx-32 flex flex-col'>
+          <h1 className='text-white font-bold text-xl md:text-[28px] md:mt-12 mt-8 lg:text-3xl'>myfitnesspal</h1>
+
+          <div className='flex hidden lg:block justify-self-center flex-col items-center mt-6 '>        
+          <h1 className='text-white mt-14 lg:text-[18px] md:mt-7'>Nutrition tracking for real life.</h1>
+          <span>
+            <button className="flex justify-center  bg-white text-[#0066EE] rounded-4xl px-10 py-2 text-[15px] lg:text-xl font-semibold mt-4">
+              START TODAY
+                <MdOutlineKeyboardArrowRight className='text-2xl items-center ' />          
+            </button>
+          </span>
+      </div>
 
           <div className='text-white mt-5 md:hidden space-y-2'>
             <h1 className='text-[18px] font-bold'>Product</h1>
@@ -63,7 +73,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='flex justify-self-center flex-col items-center mt-6'>        
+      <div className='flex lg:hidden justify-self-center flex-col items-center mt-6'>        
           <h1 className='text-white mt-14 md:mt-7'>Nutrition tracking for real life.</h1>
           <span>
             <button className="flex justify-center bg-white text-[#0066EE] rounded-4xl px-10 py-2 text-[15px] font-semibold mt-4">
@@ -74,7 +84,7 @@ const Footer = () => {
       </div>
 
 
-      <div className='text-neutral-400 text-center w-80 space-x-2 mx-auto mt-10 text-[13px]'>
+      <div className='text-neutral-400 text-center w-80 lg:w-full space-x-2 mx-auto mt-10 text-[13px]'>
         <Link 
         className=' '
         href="@/app/dummy-page" 

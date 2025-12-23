@@ -43,18 +43,17 @@ const Section1 = () => {
           <IoStarSharp className="text-[#fdda1c] text-3xl" />
           <IoStarSharp className="text-[#fdda1c] text-3xl" />
         </div>
-        <div className="text-4xl text-white font-semibold pt-7 leading-12">
+        <div className="text-4xl lg:text-5xl text-white font-semibold pt-7 leading-12">
           <h1>
           3.5 Million 
-        </h1>
-        <h1>
+         
           5-Star Ratings
         </h1>
         </div>
         
         <div className="h-20 flex items-center justify-center">
           <div className="text-lg text-white pt-4 px-5 transition-opacity duration-500">
-            <p className='w-72      mt-12 '>{testimonials[currentTestimonialIndex].text}</p>
+            <p className='w-72  lg:w-[500px] mt-12 '>{testimonials[currentTestimonialIndex].text}</p>
             <p className="mt-2 text-sm">{testimonials[currentTestimonialIndex].author}</p>
           </div>
         </div>

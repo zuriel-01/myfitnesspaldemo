@@ -70,16 +70,18 @@ const Section2 = () => {
           />         
            
         </div>
-      </div>      
-        <div className=' my-20 flex flex-col bg-[#151824] rounded-2xl p-6 mx-20 md:w-[70%] justify-self-center'>
-          <div >
-          <p className="text-gray-500 text-center font-semibold ">35+ apps & devices</p>
-          <p className="text-white text-2xl font-semibold text-center ">
-            Sync steps, weight, workouts and more
+      </div> 
+
+
+        <div className=' m-20 flex flex-col lg:grid lg:grid-cols-2 bg-[#151824] rounded-2xl px-6 md:w-[75%] justify-self-center'>
+          <div className='lg:flex lg:flex-col lg:justify-center ' >
+          <p className="text-gray-500 text-center font-semibold md:pt-5 lg:pt-0 lg:text-left">35+ apps & devices</p>
+          <p className="text-white text-2xl font-semibold text-center lg:text-4xl lg:flex lg:items-center lg:justify-self-center lg:text-left">
+            Sync steps, weight, workouts & more
           </p>
           </div>
       
-          <div  className='relative w-72 h-72 md:w-[450px] md:h-[450px] mb-5 flex mt-12 mx-auto'>
+          <div  className='relative w-72 h-72 md:w-[450px] md:h-[450px] mb-5 flex mt-12 mx-auto lg:w-80 overflow-hidden lg:h-80'>
             <Image
             src={"/image7.png"}
             fill

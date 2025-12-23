@@ -96,11 +96,11 @@ const QandA = () => {
     </div>
 
 
-            <h1 className='text-[12px] text-[#6c6c70] mb-16 '>
-              <p className='text-bold mb-4 text-sm pl-1'> 
+            <h1 className='text-[#6c6c70] mb-16 text-sm'>
+              <p className='text-bold mb-4  pl-1'> 
                 About MyFitnessPal
               </p>
-              <p className='pl-1'>
+              <p className='pl-1 '>
                 MyFitnessPal is one of the best weight loss apps and fitness apps, helping nearly 1 million members reach their nutrition and fitness goals every year. Members use it as a calories tracker and calorie counter to log their foods, and take advantage of the app&apos;s food database that contains over 20 million foods. It&apos;s not just a free calorie counter app — it&apos;s also the best calorie counter app for people who are looking to take back control of their health and fitness.
               </p>
               
